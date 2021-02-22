@@ -1,2 +1,2 @@
 # News-Classification
-classify news categories with raw text
+classify Vietnameses news categories with raw text
