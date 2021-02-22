@@ -30,7 +30,10 @@ if __name__ == "__main__":
     x_train = preprocessed["X"]
     y_train = preprocessed["y"]
     word2idx= preprocessed["Word2Idx"]
-    model = create_model(ntoken, embedding_dim, nclass)    
+    
+    model = create_model(ntoken, embedding_dim, nclass) 
+    model.compile(loss="sparse_categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
+   
     model.fit(x_train, y_train, batch_size=batch_size, epochs=n_epochs, validation_split=0.2)
 
     #save model

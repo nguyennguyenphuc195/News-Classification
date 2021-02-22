@@ -26,5 +26,4 @@ def create_model(ntoken, emb_dim, nclass):
     predictions = layers.Dense(nclass, activation="softmax", name="predictions")(x)
 
     model = tf.keras.Model(inputs, predictions)
-    model.compile(loss="sparse_categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
     return model
