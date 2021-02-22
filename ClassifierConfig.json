@@ -1,5 +1,5 @@
 {
-    "DATA_DIR"    : "./news/",
+    "DATA_DIR"    : "./data/news/",
     "EMBEDDING_DIM": 128,
     "N_TOKENS"    : 20000,
     "MAXLEN"  : 1024,
