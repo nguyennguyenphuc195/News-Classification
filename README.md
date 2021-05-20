@@ -1,4 +1,7 @@
 # News-Classification
+Run train.py to retrain 1D cnn model from scratch.
+Run test.py to evaluate pretrained model.
+
 Classify Vietnameses news into categories with raw text
 
 validation split = 0.2
