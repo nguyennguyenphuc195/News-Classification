@@ -2,6 +2,9 @@
 Classify Vietnameses news into categories with raw text
 
 validation split = 0.2
-|             | Train + Validation | Validation (at 20 epochs)|
-| ----------- | -------------------|--------------------------|
-| Accuracy    | 0.86               | 0.63                     |
+|             | Accuracy on Train + Validation | Accuracy on Validation (at 20 epochs)|
+| ----------------------- | -------------------|--------------------------|
+| Simple Dense network    | _                  | 0.5882                   |
+| LSTM                    | _                  | 0.5785                   |
+| 1D convolutional network| 0.86               |  0.6282                  |
+
